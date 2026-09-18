@@ -3,14 +3,14 @@
 > **Architectural Concept Visualization & Digital Interactive Showcase**  
 > *Where Flavor, Color & Sensory Science Converge.*
 
-[![Live Site](https://img.shields.io/badge/Live%20Showcase-GitHub%20Pages-success?style=for-the-badge&logo=github)](https://neha-bagri.github.io/sensient-experience-centre/)
-[![Status](https://img.shields.io/badge/Design%20Concept-Executive%20Ready-orange?style=for-the-badge)](https://neha-bagri.github.io/sensient-experience-centre/)
+[![Live Site](https://img.shields.io/badge/Live%20Showcase-GitHub%20Pages-success?style=for-the-badge&logo=github)](https://neha-bagri.github.io/S-company/)
+[![Status](https://img.shields.io/badge/Design%20Concept-Executive%20Ready-orange?style=for-the-badge)](https://neha-bagri.github.io/S-company/)
 
 ---
 
 ## 🌐 Live Website
 Explore the interactive 3D floor plan and high-resolution interior renders:  
-👉 **[https://neha-bagri.github.io/sensient-experience-centre/](https://neha-bagri.github.io/sensient-experience-centre/)**
+👉 **[https://neha-bagri.github.io/S-company/](https://neha-bagri.github.io/S-company/)**
 
 ---
 
@@ -70,7 +70,7 @@ flowchart LR
 - **Frontend**: HTML5, Tailwind CSS, Vanilla JavaScript, FontAwesome
 - **AI Visuals**: Gemini AI & Imagen 3 Architectural Rendering Engine
 - **Hosting**: GitHub Pages (Static Web Hosting)
-- **Repository**: [https://github.com/Neha-Bagri/sensient-experience-centre](https://github.com/Neha-Bagri/sensient-experience-centre)
+- **Repository**: [https://github.com/Neha-Bagri/S-company](https://github.com/Neha-Bagri/S-company)
 
 ---
 
