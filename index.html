@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sensient Experience & Innovation Centre | Architectural Concept</title>
+  
+  <!-- Tailwind CSS & Google Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          },
+          colors: {
+            brand: {
+              gold: '#D4AF37',
+              warmDark: '#121316',
+              cardDark: '#1B1C22',
+              cardBorder: '#2E303B',
+              accentOrange: '#F97316',
+              accentPurple: '#8B5CF6',
+              accentTeal: '#06B6D4',
+              accentPink: '#EC4899',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .glass-nav {
+      background: rgba(18, 19, 22, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card {
+      background: rgba(27, 28, 34, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #FF7E5F 0%, #FEB47B 40%, #D4AF37 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hotspot-pulse {
+      animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+    }
+    @keyframes pulse-ring {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.7); }
+      70% { transform: scale(1.15); box-shadow: 0 0 0 12px rgba(249, 115, 22, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(249, 115, 22, 0); }
+    }
+  </style>
+</head>
+<body class="bg-brand-warmDark text-slate-200 font-sans antialiased selection:bg-brand-accentOrange selection:text-white">
+
+  <!-- ================= TOP NAVIGATION ================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center space-x-4">
+        <div class="h-10 w-10 rounded-xl bg-gradient-to-tr from-amber-500 via-rose-500 to-violet-600 flex items-center justify-center font-bold text-white shadow-lg shadow-rose-500/20">
+          <i class="fa-solid fa-flask-vial text-lg"></i>
+        </div>
+        <div>
+          <span class="text-xl font-bold tracking-tight text-white block">SENSIENT</span>
+          <span class="text-xs tracking-widest text-amber-400 font-medium uppercase">Experience & Innovation Centre</span>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+        <a href="#overview" class="text-slate-300 hover:text-amber-400 transition">Overview</a>
+        <a href="#floorplan" class="text-slate-300 hover:text-amber-400 transition">3D Floor Plan</a>
+        <a href="#journey" class="text-slate-300 hover:text-amber-400 transition">Customer Journey</a>
+        <a href="#zones" class="text-slate-300 hover:text-amber-400 transition">Zone Showcase</a>
+        <a href="#architecture" class="text-slate-300 hover:text-amber-400 transition">Design Specs</a>
+      </nav>
+
+      <div class="flex items-center space-x-3">
+        <a href="#floorplan" class="px-4 py-2 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-white font-semibold text-sm shadow-md hover:shadow-orange-500/25 hover:brightness-110 transition flex items-center gap-2">
+          <i class="fa-solid fa-cube"></i>
+          <span>Explore 3D Plan</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section id="overview" class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[450px] bg-gradient-to-tr from-rose-600/20 via-amber-500/15 to-violet-600/20 blur-[130px] -z-10 rounded-full pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto space-y-6">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-300 text-xs font-semibold uppercase tracking-wider">
+          <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+          Architectural & Operational Concept
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+          Where <span class="gradient-text">Flavor, Color & Sensory Science</span> Converge.
+        </h1>
+
+        <p class="text-lg text-slate-300 font-light leading-relaxed">
+          A world-class customer co-creation facility engineered for sensory precision, collaborative formulation, and premium hospitality — elevating client journeys into lasting partnerships.
+        </p>
+
+        <!-- Quick Stats Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 text-left">
+          <div class="glass-card p-4 rounded-2xl">
+            <div class="text-2xl font-bold text-amber-400">10</div>
+            <div class="text-xs text-slate-400 uppercase tracking-wider mt-1">Seamless Touchpoints</div>
+          </div>
+          <div class="glass-card p-4 rounded-2xl">
+            <div class="text-2xl font-bold text-rose-400">2-in-1</div>
+            <div class="text-xs text-slate-400 uppercase tracking-wider mt-1">Dual Sensory Lab</div>
+          </div>
+          <div class="glass-card p-4 rounded-2xl">
+            <div class="text-2xl font-bold text-teal-400">Discreet</div>
+            <div class="text-xs text-slate-400 uppercase tracking-wider mt-1">Back-of-House Prep</div>
+          </div>
+          <div class="glass-card p-4 rounded-2xl">
+            <div class="text-2xl font-bold text-violet-400">100%</div>
+            <div class="text-xs text-slate-400 uppercase tracking-wider mt-1">Co-Creation Driven</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MASTER 3D FLOORPLAN EXPLORER ================= -->
+  <section id="floorplan" class="py-20 bg-brand-warmDark/90 relative border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+        <div>
+          <span class="text-amber-400 text-xs font-bold tracking-widest uppercase block mb-1">Spatial Architecture</span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Interactive 3D Master Floor Plan</h2>
+          <p class="text-slate-400 text-sm mt-2 max-w-xl">
+            Click on any highlighted zone marker to view detailed architectural renders, equipment specs, and operational flows.
+          </p>
+        </div>
+        <div class="flex items-center gap-2 text-xs text-slate-400 bg-slate-900/80 px-4 py-2 rounded-xl border border-slate-800">
+          <i class="fa-solid fa-hand-pointer text-amber-400"></i> Click hotspot icons on the render below
+        </div>
+      </div>
+
+      <!-- Floorplan Render Container with Hotspots -->
+      <div class="relative rounded-3xl overflow-hidden border border-slate-700/60 shadow-2xl bg-black">
+        <img src="assets/images/floorplan.jpg" alt="Sensient 3D Master Floor Plan" class="w-full h-auto object-cover block" id="master-floorplan-img" />
+
+        <!-- HOTSPOT 1: Welcome & Entrance -->
+        <button onclick="openZoneModal('entrance')" class="absolute top-[48%] left-[7%] -translate-x-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-amber-500 text-white font-bold text-xs flex items-center justify-center shadow-lg hover:scale-125 transition hotspot-pulse" title="Customer Entrance & Welcome">
+          1
+        </button>
+
+        <!-- HOTSPOT 2: Experience Gallery -->
+        <button onclick="openZoneModal('gallery')" class="absolute top-[68%] left-[28%] -translate-x-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-rose-500 text-white font-bold text-xs flex items-center justify-center shadow-lg hover:scale-125 transition hotspot-pulse" title="Experience Gallery">
+          2
+        </button>
+
+        <!-- HOTSPOT 3: Meeting Suites & Prep Kitchen -->
+        <button onclick="openZoneModal('meetings')" class="absolute top-[28%] left-[26%] -translate-x-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-blue-500 text-white font-bold text-xs flex items-center justify-center shadow-lg hover:scale-125 transition hotspot-pulse" title="Meeting Suites & Discreet Sample Prep">
+          3
+        </button>
+
+        <!-- HOTSPOT 4: Sensory Science Lab -->
+        <button onclick="openZoneModal('sensory')" class="absolute top-[42%] left-[64%] -translate-x-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-purple-500 text-white font-bold text-xs flex items-center justify-center shadow-lg hover:scale-125 transition hotspot-pulse" title="Sensory Science Lab (Booths + Tasting Bar)">
+          4
+        </button>
+
+        <!-- HOTSPOT 5: Demo Kitchen & Application Lab -->
+        <button onclick="openZoneModal('kitchen')" class="absolute top-[24%] left-[82%] -translate-x-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-emerald-500 text-white font-bold text-xs flex items-center justify-center shadow-lg hover:scale-125 transition hotspot-pulse" title="Culinary Demo Kitchen & Application Lab">
+          5
+        </button>
+
+        <!-- HOTSPOT 6: Color Playground / Lab -->
+        <button onclick="openZoneModal('colorlab')" class="absolute top-[52%] left-[88%] -translate-x-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-pink-500 text-white font-bold text-xs flex items-center justify-center shadow-lg hover:scale-125 transition hotspot-pulse" title="Color Playground & Chemistry">
+          6
+        </button>
+
+        <!-- HOTSPOT 7: Co-Creation Workshop -->
+        <button onclick="openZoneModal('cocreation')" class="absolute top-[72%] left-[70%] -translate-x-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-amber-600 text-white font-bold text-xs flex items-center justify-center shadow-lg hover:scale-125 transition hotspot-pulse" title="Co-Creation Workshop Studio">
+          7
+        </button>
+
+        <!-- HOTSPOT 8: Experience Café & Lounge -->
+        <button onclick="openZoneModal('cafe')" class="absolute top-[82%] left-[88%] -translate-x-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-teal-500 text-white font-bold text-xs flex items-center justify-center shadow-lg hover:scale-125 transition hotspot-pulse" title="Customer Experience Café & Trend Lounge">
+          8
+        </button>
+      </div>
+
+      <!-- Quick Jump Buttons below floorplan -->
+      <div class="mt-6 flex flex-wrap gap-2 justify-center">
+        <button onclick="openZoneModal('gallery')" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span> Experience Gallery
+        </button>
+        <button onclick="openZoneModal('meetings')" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span> Meeting Suites & Back-of-House Prep
+        </button>
+        <button onclick="openZoneModal('sensory')" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-purple-500"></span> Sensory Lab (Booths + Bar)
+        </button>
+        <button onclick="openZoneModal('kitchen')" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span> Demo Kitchen & App Lab
+        </button>
+        <button onclick="openZoneModal('cocreation')" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-amber-600"></span> Co-Creation Studio
+        </button>
+        <button onclick="openZoneModal('cafe')" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs text-slate-300 flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-teal-500"></span> Experience Café & Lounge
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 10-STEP CUSTOMER JOURNEY ================= -->
+  <section id="journey" class="py-20 relative bg-brand-cardDark/50 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-amber-400 text-xs font-bold tracking-widest uppercase block mb-1">Narrative Sequence</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">The 10-Step Customer Experience Journey</h2>
+        <p class="text-slate-400 text-sm mt-2">
+          A seamless flow combining botanical discovery, rigorous science, formulation co-creation, and hospitality.
+        </p>
+      </div>
+
+      <!-- Flowchart / Timeline -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+        <div class="glass-card p-5 rounded-2xl relative border-l-4 border-l-amber-500">
+          <div class="text-xs font-bold text-amber-400 mb-1">STEP 01</div>
+          <h3 class="text-base font-semibold text-white">Entrance & Welcome</h3>
+          <p class="text-xs text-slate-400 mt-2">Warm botanical hospitality greeting and the iconic "World of Sensient" welcome wall.</p>
+        </div>
+
+        <div class="glass-card p-5 rounded-2xl relative border-l-4 border-l-rose-500">
+          <div class="text-xs font-bold text-rose-400 mb-1">STEP 02</div>
+          <h3 class="text-base font-semibold text-white">Experience Gallery</h3>
+          <p class="text-xs text-slate-400 mt-2">Illuminated rainbow color shade systems, raw material cloches, and interactive molecular pairing tables.</p>
+        </div>
+
+        <div class="glass-card p-5 rounded-2xl relative border-l-4 border-l-blue-500">
+          <div class="text-xs font-bold text-blue-400 mb-1">STEP 03</div>
+          <h3 class="text-base font-semibold text-white">Executive Meetings</h3>
+          <p class="text-xs text-slate-400 mt-2">Presentations in 40-seat or 15-seat suites with zero-interruption sample service from central prep.</p>
+        </div>
+
+        <div class="glass-card p-5 rounded-2xl relative border-l-4 border-l-purple-500">
+          <div class="text-xs font-bold text-purple-400 mb-1">STEP 04</div>
+          <h3 class="text-base font-semibold text-white">Sensory Science Lab</h3>
+          <p class="text-xs text-slate-400 mt-2">Dual experience: 8 ISO-compliant private sensory booths and an open circular curved tasting bar.</p>
+        </div>
+
+        <div class="glass-card p-5 rounded-2xl relative border-l-4 border-l-emerald-500">
+          <div class="text-xs font-bold text-emerald-400 mb-1">STEP 05</div>
+          <h3 class="text-base font-semibold text-white">Demo Kitchen & Lab</h3>
+          <p class="text-xs text-slate-400 mt-2">Live formulation for beverages, sports nutrition, confectionery, gummies, and bakery items.</p>
+        </div>
+
+        <div class="glass-card p-5 rounded-2xl relative border-l-4 border-l-pink-500">
+          <div class="text-xs font-bold text-pink-400 mb-1">STEP 06</div>
+          <h3 class="text-base font-semibold text-white">Color Playground</h3>
+          <p class="text-xs text-slate-400 mt-2">Interactive color matching, shade stability under light/heat, and natural pigment blending stations.</p>
+        </div>
+
+        <div class="glass-card p-5 rounded-2xl relative border-l-4 border-l-amber-600">
+          <div class="text-xs font-bold text-amber-400 mb-1">STEP 07</div>
+          <h3 class="text-base font-semibold text-white">Co-Creation Studio</h3>
+          <p class="text-xs text-slate-400 mt-2">Collaborative workshop with central oak bench, digital whiteboards, and full flavor/color libraries.</p>
+        </div>
+
+        <div class="glass-card p-5 rounded-2xl relative border-l-4 border-l-indigo-500">
+          <div class="text-xs font-bold text-indigo-400 mb-1">STEP 08</div>
+          <h3 class="text-base font-semibold text-white">Trend & Innovation</h3>
+          <p class="text-xs text-slate-400 mt-2">Curated global trend showcases, consumer insights, and future market predictions.</p>
+        </div>
+
+        <div class="glass-card p-5 rounded-2xl relative border-l-4 border-l-teal-500">
+          <div class="text-xs font-bold text-teal-400 mb-1">STEP 09</div>
+          <h3 class="text-base font-semibold text-white">Experience Café</h3>
+          <p class="text-xs text-slate-400 mt-2">Barista espresso bar, craft beverage taps, and tasting tables for freshly formulated concepts.</p>
+        </div>
+
+        <div class="glass-card p-5 rounded-2xl relative border-l-4 border-l-yellow-400">
+          <div class="text-xs font-bold text-yellow-400 mb-1">STEP 10</div>
+          <h3 class="text-base font-semibold text-white">Actionable Roadmap</h3>
+          <p class="text-xs text-slate-400 mt-2">Project scoping, formulation sign-off, and pilot production timelines before departure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ZONE PHOTO GALLERY & DETAILS ================= -->
+  <section id="zones" class="py-20 bg-brand-warmDark border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-amber-400 text-xs font-bold tracking-widest uppercase block mb-1">Interior Visualizations</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Photorealistic Room Renders</h2>
+        <p class="text-slate-400 text-sm mt-2">
+          Explore the bespoke design details created specifically for the Sensient Experience Centre.
+        </p>
+      </div>
+
+      <!-- Zone Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- CARD 1: SENSORY LAB -->
+        <div class="glass-card rounded-3xl overflow-hidden group hover:border-purple-500/50 transition duration-300 flex flex-col">
+          <div class="relative h-64 overflow-hidden">
+            <img src="assets/images/sensory-lab.jpg" alt="Sensory Lab" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 cursor-pointer" onclick="openLightbox('assets/images/sensory-lab.jpg', 'Sensory Experience Lab — Dual Tasting Experience')">
+            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-purple-600/90 text-white text-xs font-bold uppercase tracking-wider backdrop-blur-md">Sensory Science</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">Sensory Experience Lab</h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                Features 8 private acoustic testing booths with neutral daylight illumination & serving hatches, alongside a stunning circular curved tasting bar for social evaluation.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+              <span><i class="fa-solid fa-users text-amber-400 mr-1"></i> 8 Booths + 12 Bar Seats</span>
+              <button onclick="openZoneModal('sensory')" class="text-amber-400 font-semibold hover:underline">Full Details &rarr;</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2: EXPERIENCE GALLERY -->
+        <div class="glass-card rounded-3xl overflow-hidden group hover:border-rose-500/50 transition duration-300 flex flex-col">
+          <div class="relative h-64 overflow-hidden">
+            <img src="assets/images/experience-gallery.jpg" alt="Experience Gallery" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 cursor-pointer" onclick="openLightbox('assets/images/experience-gallery.jpg', 'Central Experience Gallery — Color & Flavor Spectrum')">
+            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-rose-600/90 text-white text-xs font-bold uppercase tracking-wider backdrop-blur-md">Brand Immersion</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">Color & Flavor Gallery</h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                An architectural centerpiece featuring an illuminated rainbow shade arch, bell jar aroma extract displays, and interactive digital touch tables for molecular pairing.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+              <span><i class="fa-solid fa-palette text-rose-400 mr-1"></i> Interactive Exhibits</span>
+              <button onclick="openZoneModal('gallery')" class="text-amber-400 font-semibold hover:underline">Full Details &rarr;</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3: APPLICATION LAB & DEMO KITCHEN -->
+        <div class="glass-card rounded-3xl overflow-hidden group hover:border-emerald-500/50 transition duration-300 flex flex-col">
+          <div class="relative h-64 overflow-hidden">
+            <img src="assets/images/demo-kitchen.jpg" alt="Application Lab" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 cursor-pointer" onclick="openLightbox('assets/images/demo-kitchen.jpg', 'Application Lab & Culinary Demo Kitchen')">
+            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-emerald-600/90 text-white text-xs font-bold uppercase tracking-wider backdrop-blur-md">Formulation</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">Culinary Demo Kitchen</h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                Commercial-grade application island with stainless steel workstations, beverage formulation bar, confectionery & gummy stations, and direct chef-to-client seating.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+              <span><i class="fa-solid fa-utensils text-emerald-400 mr-1"></i> Beverage, Confectionery & Pharma</span>
+              <button onclick="openZoneModal('kitchen')" class="text-amber-400 font-semibold hover:underline">Full Details &rarr;</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 4: CO-CREATION WORKSHOP -->
+        <div class="glass-card rounded-3xl overflow-hidden group hover:border-amber-500/50 transition duration-300 flex flex-col">
+          <div class="relative h-64 overflow-hidden">
+            <img src="assets/images/cocreation-room.jpg" alt="Co-Creation Studio" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 cursor-pointer" onclick="openLightbox('assets/images/cocreation-room.jpg', 'Co-Creation & Concept Development Studio')">
+            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-amber-600/90 text-white text-xs font-bold uppercase tracking-wider backdrop-blur-md">Collaboration</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">Co-Creation Studio</h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                A collaborative workshop with solid oak lab table, smart digital whiteboard walls, formulation screens, and organized flavor/color dropper libraries.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+              <span><i class="fa-solid fa-handshake text-amber-400 mr-1"></i> 12–16 Collaborators</span>
+              <button onclick="openZoneModal('cocreation')" class="text-amber-400 font-semibold hover:underline">Full Details &rarr;</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 5: EXECUTIVE MEETING SUITES -->
+        <div class="glass-card rounded-3xl overflow-hidden group hover:border-blue-500/50 transition duration-300 flex flex-col">
+          <div class="relative h-64 overflow-hidden">
+            <img src="assets/images/executive-meeting.jpg" alt="Meeting Suites" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 cursor-pointer" onclick="openLightbox('assets/images/executive-meeting.jpg', 'Executive Presentation Suite & Back-of-House Pantry')">
+            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-blue-600/90 text-white text-xs font-bold uppercase tracking-wider backdrop-blur-md">Presentation</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">Meeting Suites & Prep</h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                Includes a 40-person main boardroom and 15-person workshop room, served by a central back-of-house sample prep kitchen for silent, uninterrupted sample delivery.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+              <span><i class="fa-solid fa-chalkboard-user text-blue-400 mr-1"></i> 40p + 15p Capacity</span>
+              <button onclick="openZoneModal('meetings')" class="text-amber-400 font-semibold hover:underline">Full Details &rarr;</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 6: EXPERIENCE CAFE & LOUNGE -->
+        <div class="glass-card rounded-3xl overflow-hidden group hover:border-teal-500/50 transition duration-300 flex flex-col">
+          <div class="relative h-64 overflow-hidden">
+            <img src="assets/images/experience-cafe.jpg" alt="Experience Cafe" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 cursor-pointer" onclick="openLightbox('assets/images/experience-cafe.jpg', 'Customer Experience Cafe & Trend Lounge')">
+            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-teal-600/90 text-white text-xs font-bold uppercase tracking-wider backdrop-blur-md">Hospitality</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">Experience Café & Lounge</h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                Boutique hospitality environment with a terrazzo espresso bar, craft beverage taps, living vertical green wall, and comfortable lounge seating for product degustation.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+              <span><i class="fa-solid fa-mug-hot text-teal-400 mr-1"></i> Degustation & Café</span>
+              <button onclick="openZoneModal('cafe')" class="text-amber-400 font-semibold hover:underline">Full Details &rarr;</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ARCHITECTURAL & OPERATIONAL SPECS ================= -->
+  <section id="architecture" class="py-20 bg-brand-cardDark/40 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-12">
+        <span class="text-amber-400 text-xs font-bold tracking-widest uppercase block mb-1">Architectural Integrity</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Design & Operational Logic</h2>
+        <p class="text-slate-400 text-sm mt-2">
+          Key functional innovations solving core challenges in commercial sensory and formulation centers.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="glass-card p-6 rounded-3xl space-y-3">
+          <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl">
+            <i class="fa-solid fa-door-closed"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white">Discreet Dual-Room Prep</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            The dedicated sample prep kitchen is nestled directly between the large and small meeting rooms. Technicians prepare warm, cold, or color-sensitive samples and slide them onto presentation credenzas without entering or breaking presentation flow.
+          </p>
+        </div>
+
+        <div class="glass-card p-6 rounded-3xl space-y-3">
+          <div class="w-12 h-12 rounded-2xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl">
+            <i class="fa-solid fa-vial-circle-check"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white">Dual-Mode Sensory Testing</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Combines ISO-compliant individual sensory booths (blind evaluation, computerized questionnaires, neutral illumination) with an open curved tasting bar for collaborative, unblinded client discussions.
+          </p>
+        </div>
+
+        <div class="glass-card p-6 rounded-3xl space-y-3">
+          <div class="w-12 h-12 rounded-2xl bg-teal-500/10 text-teal-400 flex items-center justify-center text-xl">
+            <i class="fa-solid fa-leaf"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white">Hospitality-Driven Science</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Replacing sterile lab aesthetics with warm oak timber, fluted acoustic paneling, terrazzo counters, living green walls, and museum-grade glass cloches to create a luxury brand experience.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="py-12 bg-brand-warmDark border-t border-slate-800 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 space-y-4">
+      <div class="flex items-center justify-center space-x-2 text-white font-bold text-sm">
+        <i class="fa-solid fa-flask-vial text-amber-400"></i>
+        <span>Sensient Customer Experience & Innovation Centre</span>
+      </div>
+      <p>Architectural Concept Visualization & Digital Showcase • Generated with Gemini AI & Antigravity</p>
+      <p class="text-slate-600">Hosted on GitHub Pages • Account: Neha-Bagri</p>
+    </div>
+  </footer>
+
+  <!-- ================= MODAL / LIGHTBOX ================= -->
+  <div id="zone-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="glass-card max-w-3xl w-full rounded-3xl overflow-hidden shadow-2xl border border-slate-700 max-h-[90vh] flex flex-col">
+      <div class="relative h-72 sm:h-80 bg-slate-900">
+        <img id="modal-img" src="" alt="Zone visual" class="w-full h-full object-cover">
+        <button onclick="closeZoneModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-black/60 text-white hover:bg-black flex items-center justify-center transition">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <span id="modal-badge" class="absolute bottom-4 left-4 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider backdrop-blur-md text-white bg-amber-500"></span>
+      </div>
+      <div class="p-6 sm:p-8 overflow-y-auto space-y-4">
+        <h3 id="modal-title" class="text-2xl font-bold text-white"></h3>
+        <p id="modal-desc" class="text-slate-300 text-sm leading-relaxed"></p>
+        <div id="modal-specs" class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-4 border-t border-slate-800"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Standard Image Lightbox -->
+  <div id="img-lightbox" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden items-center justify-center p-4" onclick="closeLightbox()">
+    <div class="max-w-5xl w-full text-center">
+      <img id="lightbox-img" src="" alt="Enlarged render" class="max-h-[85vh] mx-auto rounded-2xl shadow-2xl border border-slate-800">
+      <p id="lightbox-caption" class="text-slate-300 text-sm mt-3 font-medium"></p>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT DATA & LOGIC -->
+  <script>
+    const zoneData = {
+      entrance: {
+        title: "Customer Entrance & Welcome Gallery",
+        badge: "Zone 01 • Welcome",
+        badgeBg: "bg-amber-500",
+        img: "assets/images/experience-gallery.jpg",
+        desc: "The customer arrival point features an architectural botanical feature wall, welcoming concierge reception, and an immediate visual connection into the 'World of Sensient' illuminated brand spectrum.",
+        specs: [
+          { label: "Atmosphere", val: "Warm Luxury Greeting" },
+          { label: "Key Elements", val: "Living Wall, Welcome Desk" },
+          { label: "Flow Link", val: "Leads to Experience Gallery" }
+        ]
+      },
+      gallery: {
+        title: "Color & Flavor Experience Gallery",
+        badge: "Zone 02 • Inspiration Hub",
+        badgeBg: "bg-rose-500",
+        img: "assets/images/experience-gallery.jpg",
+        desc: "An impressive central space showcasing raw materials under illuminated bell jars, a rainbow color gradient tunnel, and interactive digital touch tables for exploring the science of color-flavor synergy.",
+        specs: [
+          { label: "Interactive Tables", val: "3 Touch Pairing Stations" },
+          { label: "Aroma Library", val: "20+ Backlit Extract Cloches" },
+          { label: "Color Arch", val: "Tunable Full Spectrum LED" }
+        ]
+      },
+      meetings: {
+        title: "Executive Presentation Suites & Central Prep Kitchen",
+        badge: "Zone 03 • Presentation",
+        badgeBg: "bg-blue-500",
+        img: "assets/images/executive-meeting.jpg",
+        desc: "Two distinct meeting rooms (Large 40p Boardroom and 15p Discussion Studio) flanking a central Back-of-House Sample Preparation Room with discreet pass-through credenzas for silent catering and tasting without meeting interruption.",
+        specs: [
+          { label: "Large Room", val: "30–40+ Persons, Video Wall" },
+          { label: "Small Room", val: "15–20 Persons, Workshop" },
+          { label: "Sample Pantry", val: "Sinks, Fridges, Prep Benches" }
+        ]
+      },
+      sensory: {
+        title: "Sensory Experience Lab (Booths + Tasting Bar)",
+        badge: "Zone 04 • Sensory Science",
+        badgeBg: "bg-purple-500",
+        img: "assets/images/sensory-lab.jpg",
+        desc: "Combines two complementary tasting environments: 8 enclosed, acoustic sensory tasting booths with standardized daylight and hatch doors for blind scientific trials, and an open circular curved tasting counter for interactive group tastings.",
+        specs: [
+          { label: "Sensory Booths", val: "8 Private Enclosures + Tablets" },
+          { label: "Circular Tasting Bar", val: "10–12 Guest Capacity" },
+          { label: "Lighting", val: "ISO Neutral Daylight Standards" }
+        ]
+      },
+      kitchen: {
+        title: "Culinary Demo Kitchen & Application Lab",
+        badge: "Zone 05 • Formulation",
+        badgeBg: "bg-emerald-500",
+        img: "assets/images/demo-kitchen.jpg",
+        desc: "Fully equipped professional application kitchen designed for beverage formulation, confectioneries, gummy development, bakery prototypes, and sports nutrition concepts. Complete with chef demonstration islands.",
+        specs: [
+          { label: "Equipment", val: "Commercial Ovens, Espresso, Mixers" },
+          { label: "Specialties", val: "Beverage, Confectionery, Nutra" },
+          { label: "Seating", val: "Front-Row Client Tasting Counter" }
+        ]
+      },
+      colorlab: {
+        title: "Color Playground & Stability Chemistry",
+        badge: "Zone 06 • Color Science",
+        badgeBg: "bg-pink-500",
+        img: "assets/images/experience-gallery.jpg",
+        desc: "Hands-on formulation area where customers experiment with natural pigments, evaluate shade matching under various light conditions, and test heat/light stability across different food matrices.",
+        specs: [
+          { label: "Sample Library", val: "Natural & Synthetic Shades" },
+          { label: "Testing", val: "Light Cabinets & pH Stations" },
+          { label: "Interactivity", val: "Real-time Blending Bench" }
+        ]
+      },
+      cocreation: {
+        title: "Co-Creation & Rapid Prototype Studio",
+        badge: "Zone 07 • Ideation",
+        badgeBg: "bg-amber-600",
+        img: "assets/images/cocreation-room.jpg",
+        desc: "A bright Scandinavian-inspired workshop with a solid oak collaboration bench, interactive digital formula whiteboards, and direct access to full ingredient libraries for real-time concept prototyping.",
+        specs: [
+          { label: "Capacity", val: "12–16 Team Members" },
+          { label: "Technology", val: "Digital Formulation Smartboards" },
+          { label: "Sample Shelves", val: "Full Dropper & Extract Library" }
+        ]
+      },
+      cafe: {
+        title: "Customer Experience Café & Innovation Lounge",
+        badge: "Zone 08 • Hospitality",
+        badgeBg: "bg-teal-500",
+        img: "assets/images/experience-cafe.jpg",
+        desc: "A sophisticated café setting with living vertical green wall, craft beverage taps, luxury espresso bar, and relaxing lounge furniture to conclude visits with casual tastings of finished consumer applications.",
+        specs: [
+          { label: "Beverage Program", val: "Espresso Bar & Craft Draft Taps" },
+          { label: "Degustation", val: "Finished Concept Pastries & Drinks" },
+          { label: "Ambiance", val: "Botanical Living Wall, Lounge Sofas" }
+        ]
+      }
+    };
+
+    function openZoneModal(zoneKey) {
+      const data = zoneData[zoneKey];
+      if (!data) return;
+
+      document.getElementById('modal-img').src = data.img;
+      document.getElementById('modal-title').innerText = data.title;
+      document.getElementById('modal-badge').innerText = data.badge;
+      document.getElementById('modal-badge').className = 'absolute bottom-4 left-4 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider backdrop-blur-md text-white ' + data.badgeBg;
+      document.getElementById('modal-desc').innerText = data.desc;
+
+      const specsContainer = document.getElementById('modal-specs');
+      specsContainer.innerHTML = '';
+      data.specs.forEach(spec => {
+        const div = document.createElement('div');
+        div.className = 'bg-slate-800/80 p-3 rounded-xl border border-slate-700/50';
+        div.innerHTML = '<div class="text-[11px] text-slate-400 uppercase">' + spec.label + '</div><div class="text-xs font-semibold text-white mt-0.5">' + spec.val + '</div>';
+        specsContainer.appendChild(div);
+      });
+
+      const modal = document.getElementById('zone-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeZoneModal() {
+      const modal = document.getElementById('zone-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function openLightbox(src, caption) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox-caption').innerText = caption;
+      const lb = document.getElementById('img-lightbox');
+      lb.classList.remove('hidden');
+      lb.classList.add('flex');
+    }
+
+    function closeLightbox() {
+      const lb = document.getElementById('img-lightbox');
+      lb.classList.add('hidden');
+      lb.classList.remove('flex');
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeZoneModal();
+        closeLightbox();
+      }
+    });
+  </script>
+</body>
+</html>
