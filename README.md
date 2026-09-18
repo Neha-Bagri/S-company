@@ -1,4 +1,4 @@
-# Sensient Customer Experience & Innovation Centre 🧪✨
+# S-Company Customer Experience & Innovation Centre 🧪✨
 
 > **Architectural Concept Visualization & Digital Interactive Showcase**  
 > *Where Flavor, Color & Sensory Science Converge.*
@@ -16,7 +16,7 @@ Explore the interactive 3D floor plan and high-resolution interior renders:
 
 ## 🏛️ Executive Summary
 
-The **Sensient Customer Experience & Innovation Centre** is an architectural concept designed to unite **Flavor, Color, Sensory Science, Application Development, and Co-Creation** into a seamless, hospitality-driven customer journey. 
+The **S-Company Customer Experience & Innovation Centre** is an architectural concept designed to unite **Flavor, Color, Sensory Science, Application Development, and Co-Creation** into a seamless, hospitality-driven customer journey. 
 
 Rather than a conventional sterile laboratory, the centre blends high-end Scandinavian warmth, acoustic fluted timber, terrazzo bars, and living green walls with precision ISO sensory testing environments.
 
@@ -26,7 +26,7 @@ Rather than a conventional sterile laboratory, the centre blends high-end Scandi
 
 | Zone | Capacity / Scale | Key Architectural & Functional Highlights |
 | :--- | :--- | :--- |
-| **01. Entrance & Welcome** | Concierge Reception | Botanical living wall, "World of Sensient" illuminated welcome arch. |
+| **01. Entrance & Welcome** | Concierge Reception | Botanical living wall, "World of S-Company" illuminated welcome arch. |
 | **02. Experience Gallery** | Central Pavilion | Full-spectrum rainbow color tunnel, 20+ backlit extract bell jars, interactive molecular pairing touch-tables. |
 | **03. Executive Boardroom Suite** | **30 Participants** | Grand presentation table with 4K video wall, plus adjacent **15-person workshop room**. Flanked by a **central back-of-house sample kitchen** with silent pass-through hatches. |
 | **04. Sensory Science Lab** | **20 Participants** | **10 ISO private testing booths** with color-coded accent panels and sliding sample hatches, plus an illuminated **10-seat curved tasting bar**. |
@@ -76,4 +76,4 @@ flowchart LR
 
 ## 👤 Author & Credits
 - **Project Lead**: Neha Bagri
-- **Concept**: Sensient Customer Experience & Innovation Centre
+- **Concept**: S-Company Customer Experience & Innovation Centre
